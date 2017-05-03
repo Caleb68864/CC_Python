@@ -1,3 +1,8 @@
+# Use
+# Place this script in the /etc/rc.local file of the your pi.
+# Then on boot it will email you the ip address of your pi.
+
+
 execfile("/home/pi/CC_Python/CCEmail.py")
 execfile("/home/pi/CC_Python/CCNetwork.py")
 
