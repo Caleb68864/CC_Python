@@ -25,6 +25,11 @@ class CCEmail:
         server.starttls()
         server.login(self.fromaddr, self.password)
         text = msg.as_string()
-        server.sendmail(self.fromaddr, self.toaddr, text)
+        try:
+            server.sendmail(self.fromaddr, self.toaddr, text)
+            print(msg)
+        except:
+            print("Failed To Send Email")
+
         server.quit()
 
