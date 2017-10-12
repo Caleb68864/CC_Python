@@ -13,7 +13,7 @@ while True:
     if ccn.internet_on():
         cce.server = '[Enter SMTP Server]'
         cce.port = [Enter Port]
-        cce.password = '!{Enter Server Password'
+        cce.password = '[Enter Server Password]'
         cce.fromaddr = '[Enter From Address]'
         cce.toaddr = '[Enter To Address]'
         cce.subject = "PI Local IP Is: " + ccn.getlocalip()
