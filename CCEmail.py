@@ -2,6 +2,7 @@ import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
+
 class CCEmail:
     fromaddr = ""
     toaddr = ""
@@ -14,6 +15,7 @@ class CCEmail:
     def __init__(self):
         pass
 
+    # Sends the email with the settings from object
     def SendEmail(self):
         msg = MIMEMultipart()
         msg['From'] = self.fromaddr
@@ -32,4 +34,3 @@ class CCEmail:
             print("Failed To Send Email")
 
         server.quit()
-

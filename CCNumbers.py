@@ -1,4 +1,6 @@
 class CCNumbers:
+
+    # Checks to see if a numbers is prime
     def isPrime(num):
         if num > 1:
             # check for factors
