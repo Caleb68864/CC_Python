@@ -15,6 +15,27 @@ class CCEmail:
     def __init__(self):
         pass
 
+    def setFromAddress(self, address):
+        self.fromaddr = address
+
+    def setToAddress(self, address):
+        self.toaddr = address
+
+    def setSubject(self, subject):
+        self.subject = subject
+
+    def setBody(self, body):
+        self.body = body
+
+    def setServer(self, server):
+        self.server = server
+
+    def setPort(self, port):
+        self.port = port
+
+    def setPassword(self, password):
+        self.password = password
+
     # Sends the email with the settings from object
     def SendEmail(self):
         msg = MIMEMultipart()
@@ -25,7 +46,9 @@ class CCEmail:
 
         server = smtplib.SMTP(self.server, self.port)
         server.starttls()
-        server.login(self.fromaddr, self.password)
+        if self.password != "":
+            server.login(self.fromaddr, self.password)
+
         text = msg.as_string()
         try:
             server.sendmail(self.fromaddr, self.toaddr, text)

@@ -1,8 +1,21 @@
-from CCPDF import CCPDF
+import os
+import time
+from datetime import datetime
+print(os.path.getmtime("\\\\fs1\\fax\\kearney"))
+print()
 
-p = CCPDF()
+# import os.path
+# from pathlib import Path
+# curPath = "\\\\fs1\\fax\\kearney"
 
-p.removeBlankPages("F:\\temp\\test.pdf", "F:\\temp\\test2.pdf")
+
+
+
+#from CCPDF import CCPDF
+
+#p = CCPDF()
+
+#p.removeBlankPages("F:\\temp\\test.pdf", "F:\\temp\\test2.pdf")
 
 
 
