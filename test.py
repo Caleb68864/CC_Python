@@ -1,8 +1,13 @@
-import os
-import time
-from datetime import datetime
-print(os.path.getmtime("\\\\fs1\\fax\\kearney"))
-print()
+from Find_Network_User_Path import Find_Network_User_Path
+Find_Network_User_Path("cvanolinda", [1,2,3,4])
+
+
+
+# import os
+# import time
+# from datetime import datetime
+# print(os.path.getmtime("\\\\fs1\\fax\\kearney"))
+# print()
 
 # import os.path
 # from pathlib import Path
